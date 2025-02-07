@@ -1,0 +1,87 @@
+body{
+  margin: 0;
+  
+  
+}
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  justify-content: space-between;
+}
+
+nav li {
+  float: right;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+nav a.active {
+  background-color: #4CAF50;
+}
+
+.form {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  border: 2px solid #090909;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input[type="text"], form input[type="number"], form input[type="tel"], form input[type="password"],form input[type="email"], form textarea, form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+.flashes{
+  color: red;
+}
+
+.linkbtn{
+  padding: 10px;
+  background-color: green;
+  color: white;
+  text-decoration: none;
+}
+.linkbtn:hover{
+  background-color: red;
+  color: white;
+}

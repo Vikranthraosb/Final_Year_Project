@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ADD STUDENT</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <style>
+      body{
+      
+      background-image: url("/static/home.png") ;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position-y: 40px;
+      
+      }
+          </style>
+  </head>
+  <body >
+    <nav>
+      <ul>
+        <li><a  href="/">LOGOUT</a></li>
+       
+        <li><a href="viewstudents" >VIEW STUDENTS</a></li>
+        <li><a href="addstudentpage" class="active">ADD STUDENT</a></li>
+        <li><a href="addsubjectpage" >ADD SUBJECT</a></li>
+        <li><a href="viewstaffpage" >VIEW STAFF</a></li>
+        <li><a href="addstaffpage" >ADD STAFF</a></li>
+        
+      </ul>
+    </nav>
+<br>
+
+    <div class="form">
+      <h2>ADD STUDENT</h2>
+      <div class="flashes">
+        {% for message in get_flashed_messages() %}
+          {{ message }}
+        {% endfor %}
+      </div>
+      <form action="savestudent" method="POST">
+        
+        <label for="name">NAME:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="usn">USN:</label>
+        <input type="text" id="usn" name="usn" required>
+
+
+        <label for="email">EMAIL:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">PHONE:</label>
+        <input type="number" id="phone" name="phone" onchange="valphone()" required>
+
+        <label for="gender">GENDER:</label>
+        <select name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+
+        <label for="address">ADDRESS:</label>
+        <textarea rows="3" cols="15" name="address" required></textarea>
+
+        <label for="mentor">SELECT MENTOR:</label>
+        <select name="mentor">
+           {%for r in res%}
+            <option value="{{r[0]}}">Name: {{r[1]}},SUbject: {{r[7]}},Sem: {{r[8]}}</option>
+            {%endfor%}
+        </select>
+
+        <label for="password">PASSWORD:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="SUBMIT">
+      </form>
+    </div>
+    <script>
+function valphone(){
+  var phno = document.getElementById("phone").value;
+  var phnolen = phno.length;
+  if (phnolen!=10){
+alert("invalid phone number");
+document.getElementById("phone").value="";
+  }
+}
+
+    </script>
+  </body>
+</html>

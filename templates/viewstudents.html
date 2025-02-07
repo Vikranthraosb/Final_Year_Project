@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>STUDENT LIST</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/table.css"
+    <script src="/static/jquery.min.js"></script>
+   
+  </head>
+  <body>
+    <nav>
+        <ul>
+          <li><a  href="/">LOGOUT</a></li>
+          
+          <li><a href="viewstudents" class="active">VIEW STUDENTS</a></li>
+          <li><a href="addstudentpage" >ADD STUDENT</a></li>
+          <li><a href="addsubjecttpage" >ADD SUBJECT</a></li>
+          <li><a href="viewstaffpage" >VIEW STAFF</a></li>
+          <li><a href="addstaffpage" >ADD STAFF</a></li>
+            
+          </ul>
+    </nav>
+
+<br>
+<center>
+<div class="flashes">
+    
+    {% for message in get_flashed_messages() %}
+      {{ message }}
+    {% endfor %}
+
+  </div>
+  <h1>STUDENTS LIST</h1>
+  
+<table id="mytable">
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>USN</th>
+            <th>EMAIL</th>
+            <th>PHONE</th>
+            <th>GENDER</th>
+            <th>ADDRESS</th>
+            <th>MENTOR NAME</th>
+            <th>MENTOR EMAIL</th>
+            <th>MENTOR PHONE</th>
+            
+            
+        </tr>
+    </thead>
+    <tbody>
+        {% for r in res %}
+        <tr>
+            <td>{{ r[1] }}</td>
+            <td>{{ r[2] }}</td>
+            <td>{{ r[3] }}</td>
+            <td>{{ r[4] }}</td>
+            <td>{{ r[5] }}</td>
+            <td><textarea rows="3" cols="15">{{r[6] }}</textarea> </td>
+            <td>{{ r[10] }}</td>
+            <td>{{ r[11] }}</td>
+            <td>{{ r[12] }}</td>
+           
+            
+            
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</center>
+  </body>
+</html>

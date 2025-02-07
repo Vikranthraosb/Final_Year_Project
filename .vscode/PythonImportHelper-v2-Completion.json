@@ -1,0 +1,493 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "url_for",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "flash",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "mysql.connector",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "Error",
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "isExtraImport": true,
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "Markup",
+        "importPath": "markupsafe",
+        "description": "markupsafe",
+        "isExtraImport": true,
+        "detail": "markupsafe",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "embeddings",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "embeddings",
+        "description": "embeddings",
+        "detail": "embeddings",
+        "documentation": {}
+    },
+    {
+        "label": "recognition",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "recognition",
+        "description": "recognition",
+        "detail": "recognition",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "face_recognition",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "face_recognition",
+        "description": "face_recognition",
+        "detail": "face_recognition",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "smtplib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "smtplib",
+        "description": "smtplib",
+        "detail": "smtplib",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEMultipart",
+        "importPath": "email.mime.multipart",
+        "description": "email.mime.multipart",
+        "isExtraImport": true,
+        "detail": "email.mime.multipart",
+        "documentation": {}
+    },
+    {
+        "label": "MIMEText",
+        "importPath": "email.mime.text",
+        "description": "email.mime.text",
+        "isExtraImport": true,
+        "detail": "email.mime.text",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "mailing",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mailing",
+        "description": "mailing",
+        "detail": "mailing",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "dbconnection",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def dbconnection():\n    con = mq.connect(host='localhost', database='stattendance',user='root',password='root')\n    return con\n@app.route('/')\ndef home():\n    return render_template('index.html', title='home')\n@app.route('/loginpage')\ndef loginpage():\n    return render_template('login.html',title='login')\n@app.route('/enatpage')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def home():\n    return render_template('index.html', title='home')\n@app.route('/loginpage')\ndef loginpage():\n    return render_template('login.html',title='login')\n@app.route('/enatpage')\ndef enatpage():\n    return render_template('enatt.html',title='enable attendance')\n@app.route('/checkattpage')\ndef checkattpage():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "loginpage",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def loginpage():\n    return render_template('login.html',title='login')\n@app.route('/enatpage')\ndef enatpage():\n    return render_template('enatt.html',title='enable attendance')\n@app.route('/checkattpage')\ndef checkattpage():\n    return render_template('checkatt.html',title='check attendance', subject = session['subject'])\n@app.route('/addstudentpage')\ndef addstudentpage():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "enatpage",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def enatpage():\n    return render_template('enatt.html',title='enable attendance')\n@app.route('/checkattpage')\ndef checkattpage():\n    return render_template('checkatt.html',title='check attendance', subject = session['subject'])\n@app.route('/addstudentpage')\ndef addstudentpage():\n    con = dbconnection()\n    cursor = con.cursor()\n    cursor.execute(\"select * from staff left join subject on staff.sid=subject.id\")",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "checkattpage",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def checkattpage():\n    return render_template('checkatt.html',title='check attendance', subject = session['subject'])\n@app.route('/addstudentpage')\ndef addstudentpage():\n    con = dbconnection()\n    cursor = con.cursor()\n    cursor.execute(\"select * from staff left join subject on staff.sid=subject.id\")\n    res = cursor.fetchall()\n    if res==[]:\n        message = Markup(\"<h3>Please Add Staff TO Add Student</h3>\")",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "addstudentpage",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def addstudentpage():\n    con = dbconnection()\n    cursor = con.cursor()\n    cursor.execute(\"select * from staff left join subject on staff.sid=subject.id\")\n    res = cursor.fetchall()\n    if res==[]:\n        message = Markup(\"<h3>Please Add Staff TO Add Student</h3>\")\n        flash(message)\n        return redirect(url_for('addstudent'))\n    else:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "addsubjectpage",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def addsubjectpage():\n    return render_template('addsubject.html')\n@app.route('/addstaffpage')\ndef addstaffpage():\n    con = dbconnection()\n    cursor = con.cursor()\n    cursor.execute(\"select * from subject\")\n    res = cursor.fetchall()\n    if res==[]:\n        message = Markup(\"<h3>Please Add Subject To Add Staff</h3>\")",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "addstaffpage",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def addstaffpage():\n    con = dbconnection()\n    cursor = con.cursor()\n    cursor.execute(\"select * from subject\")\n    res = cursor.fetchall()\n    if res==[]:\n        message = Markup(\"<h3>Please Add Subject To Add Staff</h3>\")\n        flash(message)\n        return redirect(url_for('addsubjectpage'))\n    else:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "viewstudents",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def viewstudents():\n    con = dbconnection()\n    cursor = con.cursor()\n    cursor.execute(\"select * from students inner join staff on students.mid=staff.id \")\n    res = cursor.fetchall()\n    if res==[]:\n        message = Markup(\"<h3>Failed! Details not found</h3>\")\n        flash(message)\n        return render_template('viewstudents.html')\n    else:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "viewstaffpage",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def viewstaffpage():\n    con = dbconnection()\n    cursor = con.cursor()\n    cursor.execute(\"select * from staff left join subject on staff.sid=subject.id\")\n    res = cursor.fetchall()\n    if res==[]:\n        message = Markup(\"<h3>Failed! Details not found</h3>\")\n        flash(message)\n        return render_template('viewstaff.html')\n    else:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def login():\n    if request.method == 'POST':\n        ltype = request.form['ltype']\n        email = request.form['email']\n        password = request.form['password']\n        con = dbconnection()\n        cursor = con.cursor()\n        if ltype=='admin':\n            cursor.execute(\"select * from admin where email='{}' and pass='{}'\".format(email,password))\n            res = cursor.fetchall()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "savesubject",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def savesubject():\n    if request.method == 'POST':\n        name = request.form['name']\n        sem = request.form['sem']\n        con = dbconnection()\n        cursor = con.cursor()\n        cursor.execute(\"select * from subject where name='{}' and sem='{}'\".format(name,sem))\n        res = cursor.fetchall()\n        if res==[]:\n                cursor.execute(\"insert into subject(name,sem)values('{}','{}')\".format(",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "savestaff",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def savestaff():\n    if request.method == 'POST':\n        name = request.form['name']\n        email = request.form['email']\n        phone = request.form['phone']\n        subject = request.form['subject']\n        password = request.form['password']\n        con = dbconnection()\n        cursor = con.cursor()\n        cursor.execute(\"select * from staff where email='{}' and phone='{}'\".format(email,phone))",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "savestudent",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def savestudent():\n    if request.method == 'POST':\n        name = request.form['name']\n        usn = request.form['usn']\n        email = request.form['email']\n        phone = request.form['phone']\n        gender = request.form['gender']\n        address = request.form['address']\n        mentor = request.form['mentor']\n        password = request.form['password']",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "enableattendance",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def enableattendance():\n    thread = threading.Thread(target=recognition.detectPerson, args=(session['subject'],))\n    thread.start()\n    return render_template('enatt.html')\n@app.route('/getattendance', methods=['POST'])\ndef getattendance():\n    from_date = request.form['from_date']\n    to_date = request.form['to_date']\n    # Validate date range\n    try:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "getattendance",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def getattendance():\n    from_date = request.form['from_date']\n    to_date = request.form['to_date']\n    # Validate date range\n    try:\n        from_date = datetime.strptime(from_date, '%Y-%m-%d')\n        to_date = datetime.strptime(to_date, '%Y-%m-%d')\n    except ValueError:\n        return \"Invalid date format. Please try again.\"\n    if from_date > to_date:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "process_attendance",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def process_attendance(df):\n    \"\"\"\n    Process attendance data from the DataFrame and calculate attendance percentage.\n    \"\"\"\n    attendance_summary = {}\n    for index, row in df.iterrows():\n        name = row['Name']\n        usn = row['USN']\n        attendance_status = row['Attendance']\n        # Initialize or update attendance count",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\napp.config['SECRET_KEY'] = 'secret_key'\nATTENDANCE_FOLDER = 'attendancesheets'\ndef dbconnection():\n    con = mq.connect(host='localhost', database='stattendance',user='root',password='root')\n    return con\n@app.route('/')\ndef home():\n    return render_template('index.html', title='home')\n@app.route('/loginpage')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['SECRET_KEY']",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config['SECRET_KEY'] = 'secret_key'\nATTENDANCE_FOLDER = 'attendancesheets'\ndef dbconnection():\n    con = mq.connect(host='localhost', database='stattendance',user='root',password='root')\n    return con\n@app.route('/')\ndef home():\n    return render_template('index.html', title='home')\n@app.route('/loginpage')\ndef loginpage():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "ATTENDANCE_FOLDER",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "ATTENDANCE_FOLDER = 'attendancesheets'\ndef dbconnection():\n    con = mq.connect(host='localhost', database='stattendance',user='root',password='root')\n    return con\n@app.route('/')\ndef home():\n    return render_template('index.html', title='home')\n@app.route('/loginpage')\ndef loginpage():\n    return render_template('login.html',title='login')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "trainPerson",
+        "kind": 2,
+        "importPath": "embeddings",
+        "description": "embeddings",
+        "peekOfCode": "def trainPerson(name,ref_id):\n        #name= input(\"Enter Name:\")\n        #ref_id= input(\"Enter Id:\")\n        print(\"function called\")\n        try:\n                f=open(\"ref_name.pkl\",\"rb\")\n                ref_dictt=pickle.load(f)\n                f.close()\n        except:\n                ref_dictt={}",
+        "detail": "embeddings",
+        "documentation": {}
+    },
+    {
+        "label": "mailsend",
+        "kind": 2,
+        "importPath": "mailing",
+        "description": "mailing",
+        "peekOfCode": "def mailsend(receiver_email,subject,body):\n    # Create message object instance\n    message = MIMEMultipart()\n    # Email subject and body\n    message[\"From\"] = sender_email\n    message[\"To\"] = receiver_email\n    message[\"Subject\"] = subject\n    # Add body to email\n    body = body\n    message.attach(MIMEText(body, \"plain\"))",
+        "detail": "mailing",
+        "documentation": {}
+    },
+    {
+        "label": "sender_email",
+        "kind": 5,
+        "importPath": "mailing",
+        "description": "mailing",
+        "peekOfCode": "sender_email = \"your_email@gmail.com\"\npassword = \"your_email_password\"\ndef mailsend(receiver_email,subject,body):\n    # Create message object instance\n    message = MIMEMultipart()\n    # Email subject and body\n    message[\"From\"] = sender_email\n    message[\"To\"] = receiver_email\n    message[\"Subject\"] = subject\n    # Add body to email",
+        "detail": "mailing",
+        "documentation": {}
+    },
+    {
+        "label": "password",
+        "kind": 5,
+        "importPath": "mailing",
+        "description": "mailing",
+        "peekOfCode": "password = \"your_email_password\"\ndef mailsend(receiver_email,subject,body):\n    # Create message object instance\n    message = MIMEMultipart()\n    # Email subject and body\n    message[\"From\"] = sender_email\n    message[\"To\"] = receiver_email\n    message[\"Subject\"] = subject\n    # Add body to email\n    body = body",
+        "detail": "mailing",
+        "documentation": {}
+    },
+    {
+        "label": "dbconnection",
+        "kind": 2,
+        "importPath": "recognition",
+        "description": "recognition",
+        "peekOfCode": "def dbconnection():\n    return mq.connect(host='localhost', database='stattendance', user='root', password='root')\ndef mailsend_alert(student_name, usn, subject_name, timestamp, staff_email):\n    email_body = f\"\"\"\n    Dear Staff,\n    The following student has marked attendance late:\n    Name: {student_name}\n    USN: {usn}\n    Subject: {stsubject}\n    Time: {timestamp}",
+        "detail": "recognition",
+        "documentation": {}
+    },
+    {
+        "label": "mailsend_alert",
+        "kind": 2,
+        "importPath": "recognition",
+        "description": "recognition",
+        "peekOfCode": "def mailsend_alert(student_name, usn, subject_name, timestamp, staff_email):\n    email_body = f\"\"\"\n    Dear Staff,\n    The following student has marked attendance late:\n    Name: {student_name}\n    USN: {usn}\n    Subject: {stsubject}\n    Time: {timestamp}\n    Attendance: Late\n    Regards,",
+        "detail": "recognition",
+        "documentation": {}
+    },
+    {
+        "label": "process_faces",
+        "kind": 2,
+        "importPath": "recognition",
+        "description": "recognition",
+        "peekOfCode": "def process_faces(known_face_encodings, known_face_usns, duration=600, trigger_time=None):\n    video_capture = cv2.VideoCapture(0)\n    detected_usns = {}\n    while True:\n        ret, frame = video_capture.read()\n        if not ret:\n            print(\"Failed to capture video frame.\")\n            break\n        # Resize frame for faster processing\n        small_frame = cv2.resize(frame, (0, 0), fx=0.25, fy=0.25)",
+        "detail": "recognition",
+        "documentation": {}
+    },
+    {
+        "label": "process_single_attendance",
+        "kind": 2,
+        "importPath": "recognition",
+        "description": "recognition",
+        "peekOfCode": "def process_single_attendance(usn, recognition_time, trigger_time):\n    con = dbconnection()\n    cursor = con.cursor()\n    cursor.execute(\"\"\"\n        SELECT \n            students.name AS student_name, \n            students.usn AS student_usn, \n            subject.name AS subject_name, \n            subject.sem AS semester,\n            staff.email AS staff_email",
+        "detail": "recognition",
+        "documentation": {}
+    },
+    {
+        "label": "detectPerson",
+        "kind": 2,
+        "importPath": "recognition",
+        "description": "recognition",
+        "peekOfCode": "def detectPerson(subject):\n    global stsubject\n    stsubject=subject\n    with open(\"ref_name.pkl\", \"rb\") as f:\n        ref_dict = pickle.load(f)\n    with open(\"ref_embed.pkl\", \"rb\") as f:\n        embed_dict = pickle.load(f)\n    known_face_encodings = []\n    known_face_usns = []\n    for ref_id, embed_list in embed_dict.items():",
+        "detail": "recognition",
+        "documentation": {}
+    }
+]

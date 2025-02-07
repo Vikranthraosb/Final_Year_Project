@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ADD STAFF</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <style>
+      body{
+      
+      background-image: url("/static/home.png") ;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position-y: 40px;
+      
+      }
+          </style>
+  </head>
+  <body >
+    <nav>
+      <ul>
+        <li><a  href="/">LOGOUT</a></li>
+        
+        <li><a href="viewstudents" >VIEW STUDENTS</a></li>
+        <li><a href="addstudentpage" >ADD STUDENT</a></li>
+        <li><a href="addsubjectpage" >ADD SUBJECT</a></li>
+        <li><a href="viewstaffpage" >VIEW STAFF</a></li>
+        <li><a href="addstaffpage"  class="active">ADD STAFF</a></li>
+        
+      </ul>
+    </nav>
+<br>
+
+    <div class="form">
+      <h2>ADD STAFF</h2>
+      <div class="flashes">
+        {% for message in get_flashed_messages() %}
+          {{ message }}
+        {% endfor %}
+      </div>
+      <form action="savestaff" method="POST">
+        
+        <label for="name">NAME:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">EMAIL:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">PHONE:</label>
+        <input type="number" id="phone" name="phone" onchange="valphone()" required>
+
+        <label for="subject">SUBJECT:</label>
+        <select name="subject">
+            {%for r in res%}
+            <option value="{{r[0]}}">{{r[1]}},{{r[2]}} sem</option>
+            {%endfor%}
+           
+        </select>
+        <label for="password">PASSWORD:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="SUBMIT">
+      </form>
+    </div>
+    <script>
+function valphone(){
+  var phno = document.getElementById("phone").value;
+  var phnolen = phno.length;
+  if (phnolen!=10){
+alert("invalid phone number");
+document.getElementById("phone").value="";
+  }
+}
+
+    </script>
+  </body>
+</html>

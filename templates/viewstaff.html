@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>STAFF LIST</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/table.css">
+    <script src="/static/jquery.min.js"></script>
+   <style>
+textarea{
+    width: 100%;
+}
+
+   </style>
+  </head>
+  <body>
+    <nav>
+        <ul>
+          <li><a  href="/">LOGOUT</a></li>
+          
+          <li><a href="viewstudents" >VIEW STUDENTS</a></li>
+          <li><a href="addstudentpage" >ADD STUDENT</a></li>
+          <li><a href="addsubjectpage" >ADD SUBJECT</a></li>
+          <li><a href="viewstaffpage" class="active">VIEW STAFF</a></li>
+          <li><a href="addstaffpage" >ADD STAFF</a></li>
+            
+          </ul>
+    </nav>
+
+<br>
+<center>
+
+<div class="flashes">
+    
+    {% for message in get_flashed_messages() %}
+      {{ message }}
+    {% endfor %}
+
+  </div>
+  <h1>STAFF LIST</h1>
+  
+<table id="mytable">
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>PHONE</th>
+            <th>SUBJECT</th>
+            <th>SEM</th>
+           
+            
+            
+        </tr>
+    </thead>
+    <tbody>
+        {% for r in res %}
+        <tr>
+            <td>{{ r[1] }}</td>
+            <td>{{ r[2] }}</td>
+            <td>{{ r[3] }}</td>
+            <td>{{ r[7] }}</td>
+            <td>{{ r[8] }}</td>
+            
+            
+            
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</center>
+  </body>
+</html>

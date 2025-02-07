@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ADD SUBJECT</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <style>
+      body{
+      
+      background-image: url("/static/home.png") ;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position-y: 40px;
+      
+      }
+          </style>
+  </head>
+  <body >
+    <nav>
+      <ul>
+        <li><a  href="/">LOGOUT</a></li>
+        
+        <li><a href="viewstudents" >VIEW STUDENTS</a></li>
+        <li><a href="addstudentpage" >ADD STUDENT</a></li>
+        <li><a href="addsubjectpage" class="active">ADD SUBJECT</a></li>
+        <li><a href="viewstaffpage" >VIEW STAFF</a></li>
+        <li><a href="addstaffpage" >ADD STAFF</a></li>
+        
+      </ul>
+    </nav>
+<br><br><br>
+
+    <div class="form">
+      <h2>ADD SUBJECT</h2>
+      <div class="flashes">
+        {% for message in get_flashed_messages() %}
+          {{ message }}
+        {% endfor %}
+      </div>
+      <form action="savesubject" method="POST">
+        
+        <label for="name">SUBJECT NAME:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="sem">SEM:</label>
+        <select name="sem">
+            <option value="1st">1st</option>
+            <option value="2nd">2nd</option>
+            <option value="3rd">3rd</option>
+            <option value="4th">4th</option>
+            <option value="5th">5th</option>
+            <option value="6th">6th</option>
+            <option value="7th">7th</option>
+            <option value="8th">8th</option>
+        </select>
+
+        
+
+        <input type="submit" value="SUBMIT">
+      </form>
+    </div>
+    
+  </body>
+</html>

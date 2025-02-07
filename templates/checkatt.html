@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Attendance</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <style>
+      body {
+        background-image: url("/static/home.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-y: 40px;
+      }
+
+      .form {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .form input[type="date"] {
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .form button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+      }
+
+      .form button:hover {
+        background-color: #45a049;
+      }
+
+     
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">LOGOUT</a></li>
+        <li><a  href="checkattpage" class="active">CHECK ATTENDANCE</a></li>
+        <li><a  href="enatpage" >ENABLE CAMERA</a></li>
+      </ul>
+    </nav>
+
+    <div class="form">
+      <h2>CHECK ATTENDANCE FOR <strong style="color: red;"> "{{subject}}" </strong></h2>
+      <div class="flashes">
+        {% for message in get_flashed_messages() %}
+          {{ message }}
+        {% endfor %}
+      </div>
+
+      <form action="getattendance" method="POST" onsubmit="return validateDates()">
+       
+        <label for="from_date">From Date:</label>
+        <input type="date" id="from_date" name="from_date" required>
+
+        <label for="to_date">To Date:</label>
+        <input type="date" id="to_date" name="to_date" required>
+
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      function validateDates() {
+        const fromDate = document.getElementById('from_date').value;
+        const toDate = document.getElementById('to_date').value;
+
+        if (fromDate === '' || toDate === '') {
+          alert('Please select both From Date and To Date.');
+          return false;
+        }
+
+        if (new Date(fromDate) > new Date(toDate)) {
+          alert('From Date must be earlier than To Date.');
+          return false;
+        }
+
+        return true;
+      }
+    </script>
+  </body>
+</html>

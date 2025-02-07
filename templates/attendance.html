@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Report</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/table.css">
+    
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a  href="/">LOGOUT</a></li>
+          <li><a  href="checkattpage" >CHECK ATTENDANCE</a></li>
+          <li><a  href="enatpage" >ENABLE CAMERA</a></li>
+         
+          
+        </ul>
+      </nav>
+      <center>
+    <h1>Attendance Report</h1>
+    
+    <table>
+        <tr>
+            <th>Student Name</th>
+            <th>USN</th>
+            <th>Attendance Percentage</th>
+        </tr>
+        {% for row in attendance_data %}
+        <tr>
+            <td>{{ row['Name'] }}</td>
+            <td>{{ row['USN'] }}</td>
+            <td>{{ row['Attendance Percentage'] }}%</td>
+        </tr>
+        {% endfor %}
+    </table>
+  
+</center>
+</body>
+</html>
